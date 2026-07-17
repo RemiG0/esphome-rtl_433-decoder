@@ -40,7 +40,7 @@ async def to_code(config):
     await cg.register_component(var, config)
     
     #cg.add_library("https://github.com/juanboro/rtl_433_Decoder_ESP.git",None)
-    cg.add_library("https://github.com/NorthernMan54/rtl_433_ESP.git")
+    cg.add_library("https://github.com/NorthernMan54/rtl_433_ESP.git",None)
     if remote_base.CONF_RECEIVER_ID in config:
         await remote_base.register_listener(var, config)
 
