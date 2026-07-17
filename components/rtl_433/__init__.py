@@ -41,7 +41,8 @@ async def to_code(config):
     
     #cg.add_library("https://github.com/juanboro/rtl_433_Decoder_ESP.git",None)
     #cg.add_library("https://github.com/NorthernMan54/rtl_433_ESP.git",None)
-    cg.add_library("NorthernMan54/rtl_433_ESP", None, "https://github.com/NorthernMan54/rtl_433_ESP.git")
+    # cg.add_library("NorthernMan54/rtl_433_ESP", None, "https://github.com/NorthernMan54/rtl_433_ESP.git")
+    cg.add_library("juanboro/rtl_433_Decoder_ESP", None, "https://github.com/juanboro/rtl_433_Decoder_ESP.git")
     if remote_base.CONF_RECEIVER_ID in config:
         await remote_base.register_listener(var, config)
 
